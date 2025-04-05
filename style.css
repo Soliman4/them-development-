@@ -1,0 +1,52 @@
+/*
+Theme Name: My Custom Theme
+Author: soliman
+Description: Custom theme
+Version: 1.0
+*/
+
+
+/* Basic Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      flex-direction: column;
+      padding: 20px;
+  }
+  
+  .nav-menu.active {
+      display: flex;
+  }
+  
+  .nav-menu li {
+      margin: 10px 0;
+  }
+  
+  .mobile-menu-toggle {
+      display: block;
+  }
+}
